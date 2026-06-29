@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lumincoin Finance</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="d-flex min-vh-100">
+
+	<!-- ==================== SIDEBAR ==================== -->
+	<aside class="bg-white border-end d-flex flex-column" style="border-color: #D9D9D9 !important; width: 219px; min-width: 219px; max-width: 219px;">
+
+		<!-- логотип -->
+		<div class="text-center" style="padding-top: 40px; padding-bottom: 20px;">
+			<img src="img/logo.png" width="98" alt="logo">
+		</div>
+
+		<!-- полоска -->
+		<hr style="margin: 0; border-width: 1px" class="text-secondary">
+
+		<!-- Меню (растягивается, чтобы вытолкнуть баланс вниз) -->
+		<div class="flex-grow-1 py-2 px-3 mt-5">
+			<a href="index.html" class="btn btn-link w-100 text-start text-decoration-none fw-medium"
+			   style="color: #052C65; font-size: 14px;">
+				<svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none"
+				     xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+					      d="M1.5 12.2929V5.79289H2.5V12.2929C2.5 12.569 2.72386 12.7929 3 12.7929H12C12.2761 12.7929 12.5 12.569 12.5 12.2929V5.79289H13.5V12.2929C13.5 13.1213 12.8284 13.7929 12 13.7929H3C2.17157 13.7929 1.5 13.1213 1.5 12.2929Z"
+					      fill="currentColor"/>
+					<path fill-rule="evenodd" clip-rule="evenodd"
+					      d="M12.5 1.29289V4.79289L10.5 2.79289V1.29289C10.5 1.01675 10.7239 0.792893 11 0.792893H12C12.2761 0.792893 12.5 1.01675 12.5 1.29289Z"
+					      fill="currentColor"/>
+					<path fill-rule="evenodd" clip-rule="evenodd"
+					      d="M6.79289 0.292893C7.18342 -0.0976322 7.81658 -0.0976301 8.20711 0.292893L14.8536 6.93934C15.0488 7.1346 15.0488 7.45118 14.8536 7.64645C14.6583 7.84171 14.3417 7.84171 14.1464 7.64645L7.5 1L0.853553 7.64645C0.658291 7.84171 0.341709 7.84171 0.146447 7.64645C-0.0488155 7.45118 -0.0488155 7.1346 0.146447 6.93934L6.79289 0.292893Z"
+					      fill="currentColor"/>
+				</svg>
+				Главная
+			</a>
+
+			<a href="income-expence.html" class="btn btn-link text-start w-100 text-decoration-none fw-medium"
+			     style="color: #052C65; font-size: 14px;">
+				<svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+				     xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+					      d="M11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15ZM16 11C16 13.7614 13.7614 16 11 16C8.23858 16 6 13.7614 6 11C6 8.23858 8.23858 6 11 6C13.7614 6 16 8.23858 16 11Z"
+					      fill="currentColor"/>
+					<path d="M9.4375 11.9444C9.48519 12.5403 9.95568 13.0049 10.8013 13.0599V13.5H11.1764V13.0568C12.0507 12.9957 12.5625 12.5281 12.5625 11.8496C12.5625 11.2323 12.1715 10.9144 11.4721 10.7494L11.1764 10.6791V9.48105C11.5516 9.52384 11.79 9.72861 11.8472 10.0128H12.5053C12.4576 9.43826 11.9648 8.989 11.1764 8.9401V8.5H10.8013V8.94927C10.0542 9.02262 9.54559 9.47188 9.54559 10.1076C9.54559 10.6699 9.92389 11.0275 10.5533 11.1742L10.8013 11.2353V12.5067C10.4166 12.4487 10.1623 12.2378 10.1051 11.9444H9.4375ZM10.7981 10.5905C10.4294 10.5049 10.2291 10.3307 10.2291 10.0678C10.2291 9.77445 10.4453 9.5544 10.8013 9.49022V10.5905H10.7981ZM11.2305 11.3362C11.6787 11.4401 11.8854 11.6082 11.8854 11.9046C11.8854 12.2439 11.6279 12.4762 11.1764 12.5189V11.324L11.2305 11.3362Z"
+					      fill="currentColor"/>
+					<path d="M1 0C0.447715 0 0 0.447716 0 1V9C0 9.55229 0.447715 10 1 10H5.08296C5.1407 9.65585 5.22773 9.32163 5.34141 9H3C3 7.89543 2.10457 7 1 7V3C2.10457 3 3 2.10457 3 1H13C13 2.10457 13.8954 3 15 3V6.52779C15.3801 6.86799 15.7166 7.25594 16 7.68221V1C16 0.447715 15.5523 0 15 0H1Z"
+					      fill="currentColor"/>
+					<path d="M9.9983 5.08325C9.99943 5.05564 10 5.02789 10 5C10 3.89543 9.10457 3 8 3C6.89543 3 6 3.89543 6 5C6 5.6845 6.34387 6.28869 6.86829 6.64924C7.71486 5.84504 8.79591 5.28533 9.9983 5.08325Z"
+					      fill="currentColor"/>
+				</svg>
+				Доходы &amp; Расходы
+			</a>
+
+			<!-- категории (выпадающий) -->
+			<button id="categoriesButton"
+			        class="btn btn-link text-start w-100 text-decoration-none d-flex justify-content-between align-items-center fw-medium"
+			        data-bs-toggle="collapse" data-bs-target="#categoriesMenu"
+			        style="font-size: 14px; color: #052C65">
+				Категории
+				<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+					      d="M0.146894 12.8546C0.0528521 12.7608 0 12.6335 0 12.5006C0 12.3678 0.0528521 12.2404 0.146894 12.1466L5.79389 6.50064L0.146894 0.854643C0.0204218 0.72817 -0.0289712 0.543834 0.0173208 0.37107C0.0636128 0.198306 0.198557 0.0633621 0.371321 0.0170698C0.544085 -0.0292225 0.728422 0.0201702 0.854894 0.146643L6.85489 6.14664C6.94894 6.24045 7.00179 6.36782 7.00179 6.50064C7.00179 6.63347 6.94894 6.76084 6.85489 6.85464L0.854894 12.8546C0.76109 12.9487 0.633721 13.0015 0.500894 13.0015C0.368066 13.0015 0.240698 12.9487 0.146894 12.8546Z"
+					      fill="currentColor"/>
+				</svg>
+			</button>
+			<div class="collapse" id="categoriesMenu">
+				<a href="expense-categories.html" style="font-size: 14px; color: #052C65"
+				   class="btn btn-link text-start w-100 ps-2 text-decoration-none fw-medium" style="font-size: 14px;">Доходы</a>
+				<a href="income-categories.html" style="font-size: 14px; color: #052C65"
+				   class="btn btn-link text-start w-100 ps-2 text-decoration-none fw-medium"
+				   style="font-size: 14px;">Расходы</a>
+			</div>
+		</div>
+
+		<!-- баланс -->
+		<div class="ms-4 mb-3 py-2 fw-medium" style="font-size: 14px; color: #052C65">Баланс: <span
+				class="text-primary">500$</span></div>
+
+		<!-- полоска -->
+		<hr style="margin: 0; border-width: 1px" class="text-secondary">
+
+		<!-- пользователь -->
+		<div class="fw-medium" style="margin: 20px 0 40px 20px; font-size: 14px; color: #052C65">
+			<svg class="me-2" width="36" height="36" viewBox="0 0 36 36" fill="none"
+			     xmlns="http://www.w3.org/2000/svg">
+				<circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
+				<path d="M18 18C19.0609 18 20.0783 17.5786 20.8284 16.8284C21.5786 16.0783 22 15.0609 22 14C22 12.9391 21.5786 11.9217 20.8284 11.1716C20.0783 10.4214 19.0609 10 18 10C16.9391 10 15.9217 10.4214 15.1716 11.1716C14.4214 11.9217 14 12.9391 14 14C14 15.0609 14.4214 16.0783 15.1716 16.8284C15.9217 17.5786 16.9391 18 18 18ZM20.6667 14C20.6667 14.7072 20.3857 15.3855 19.8856 15.8856C19.3855 16.3857 18.7072 16.6667 18 16.6667C17.2928 16.6667 16.6145 16.3857 16.1144 15.8856C15.6143 15.3855 15.3333 14.7072 15.3333 14C15.3333 13.2928 15.6143 12.6145 16.1144 12.1144C16.6145 11.6143 17.2928 11.3333 18 11.3333C18.7072 11.3333 19.3855 11.6143 19.8856 12.1144C20.3857 12.6145 20.6667 13.2928 20.6667 14ZM26 24.6667C26 26 24.6667 26 24.6667 26H11.3333C11.3333 26 10 26 10 24.6667C10 23.3333 11.3333 19.3333 18 19.3333C24.6667 19.3333 26 23.3333 26 24.6667ZM24.6667 24.6613C24.6653 24.3333 24.4613 23.3467 23.5573 22.4427C22.688 21.5733 21.052 20.6667 18 20.6667C14.9467 20.6667 13.312 21.5733 12.4427 22.4427C11.5387 23.3467 11.336 24.3333 11.3333 24.6613H24.6667Z"
+				      fill="#6C757D"/>
+			</svg>
+			Roman Chernov
+		</div>
+	</aside>
+
+	<!-- вертикальный разделитель -->
+	<div class="text-secondary" ; style="width: 1px;"></div>
+
+	<!-- ==================== MAIN CONTENT ==================== -->
+	<main class="bg-white flex-grow-1 px-5">
+		<h2 style="margin-top: 100px; font-size: 40px; color: #052C65">Создание категории расходов</h2>
+
+		<div class="mt-5" style="max-width: 400px;">
+			<div class="mb-3">
+				<input type="text" class="form-control" placeholder="Название..." style="border: 1px solid #ced4da; border-radius: 5px; padding: 10px 12px;">
+			</div>
+			<div class="d-flex gap-3">
+				<button class="btn btn-success px-3">Создать</button>
+				<a href="expense-categories.html" class="btn btn-danger px-3">Отмена</a>
+			</div>
+		</div>
+	</main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
