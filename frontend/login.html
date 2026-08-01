@@ -17,7 +17,7 @@
 		</div>
 		<div class="title-entry text-center fs-1 fw-semibold mb-2" style="margin-top: 60px; color: #052C65">Вход</div>
 
-		<form class="entry-form w-100 mx-auto" style="max-width: 400px;">
+		<form id="loginForm" class="entry-form w-100 mx-auto" style="max-width: 400px;">
 			<div class="input-group mb-2">
         <span class="input-group-text bg-body-secondary">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
         fill="#6C757D"/>
 </svg>
         </span>
-				<input type="email" class="form-control is-invalid" placeholder="Электронная почта" required>
+				<input type="email" class="form-control" placeholder="Электронная почта" required>
 				<div class="invalid-feedback">Введите корректный email</div>
 			</div>
 
@@ -49,14 +49,17 @@
 				</label>
 			</div>
 
-			<button type="submit" class="btn btn-primary w-100">Войти</button>
+			<button type="button" id="loginBtn" class="btn btn-primary w-100">Войти</button>
 
 			<div class="mt-2 fw-medium" style="font-size: 12px;">
-				Ещё нет аккаунта? <a href="register.html" class="ms-2">Пройдите регистрацию</a>
+				Ещё нет аккаунта? <a href="registred.html" class="ms-2">Пройдите регистрацию</a>
 			</div>
 		</form>
 	</div>
 </section>
+
+<script src="js/app.ts"></script>
 <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
