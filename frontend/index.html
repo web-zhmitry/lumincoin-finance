@@ -25,7 +25,7 @@
 
 		<!-- меню -->
 		<div class="flex-grow-1 py-2 px-3 mt-5">
-			<a href="javascript:void(0)" onclick="renderPage('main')" class="btn btn-link w-100 text-start text-decoration-none fw-medium"
+			<a href="javascript:void(0)" onclick="window.renderPage('main')" class="btn btn-link w-100 text-start text-decoration-none fw-medium"
 			   style="color: #052C65; font-size: 14px;">
 				<svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none"
 				     xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
 				Главная
 			</a>
 
-			<a href="javascript:void(0)" onclick="renderPage('income-expense')"
+			<a href="javascript:void(0)" onclick="window.renderPage('income-expense')"
 			   class="btn btn-link text-start w-100 text-decoration-none fw-medium"
 			   style="color: #052C65; font-size: 14px;">
 				<svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -72,9 +72,9 @@
 				</svg>
 			</button>
 			<div class="collapse" id="categoriesMenu">
-				<a href="javascript:void(0)" onclick="renderPage('income-categories')" style="font-size: 14px; color: #052C65"
+				<a href="javascript:void(0)" onclick="window.renderPage('income-categories')" style="font-size: 14px; color: #052C65"
 				   class="btn btn-link text-start w-100 ps-2 text-decoration-none fw-medium">Доходы</a>
-				<a href="javascript:void(0)" onclick="renderPage('expense-categories')" style="font-size: 14px; color: #052C65"
+				<a href="javascript:void(0)" onclick="window.renderPage('expense-categories')" style="font-size: 14px; color: #052C65"
 				   class="btn btn-link text-start w-100 ps-2 text-decoration-none fw-medium">Расходы</a>
 			</div>
 		</div>
@@ -114,9 +114,9 @@
 	</main>
 </div>
 
-<script src="js/router.js"></script>
-<script src="js/templates.js"></script>
-<script src="js/app.js"></script>
+<script src="js/router.ts"></script>
+<script src="js/templates.ts"></script>
+<script src="js/app.ts"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
