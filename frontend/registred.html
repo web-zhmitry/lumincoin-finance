@@ -19,7 +19,7 @@
 			аккаунт
 		</div>
 
-		<form class="entry-form w-100 mx-auto" style="max-width: 400px;">
+		<form id="registerForm" class="entry-form w-100 mx-auto" style="max-width: 400px;">
 
 			<div class="input-group mb-2">
         <span class="input-group-text bg-body-secondary">
@@ -28,7 +28,7 @@
         fill="#6C757D"/>
 </svg>
         </span>
-				<input type="text" class="form-control is-invalid" placeholder="Имя" required>
+				<input type="text" class="form-control" placeholder="Имя" required>
 				<div class="invalid-feedback">Поле обязательно для заполнения</div>
 			</div>
 
@@ -39,7 +39,7 @@
         fill="#6C757D"/>
 </svg>
         </span>
-				<input type="text" class="form-control is-invalid" placeholder="Фамилия" required>
+				<input type="text" class="form-control" placeholder="Фамилия" required>
 				<div class="invalid-feedback">Поле обязательно для заполнения</div>
 			</div>
 
@@ -52,7 +52,7 @@
         fill="#6C757D"/>
 </svg>
         </span>
-				<input type="email" class="form-control is-invalid" placeholder="Электронная почта" required>
+				<input type="email" class="form-control" placeholder="Электронная почта" required>
 				<div class="invalid-feedback">Введите корректный email</div>
 			</div>
 
@@ -64,7 +64,7 @@
         fill="#6C757D"/>
 </svg>
         </span>
-				<input type="password" class="form-control is-invalid" placeholder="Пароль" required>
+				<input type="password" class="form-control" placeholder="Пароль" required>
 				<div class="invalid-feedback">Пароль должен содержать минимум 8 символов, одну заглавную букву и одну цифру</div>
 			</div>
 
@@ -76,11 +76,11 @@
         fill="#6C757D"/>
 </svg>
         </span>
-				<input type="password" class="form-control is-invalid" placeholder="Подтверждение пароля" required>
+				<input type="password" class="form-control" placeholder="Подтверждение пароля" required>
 				<div class="invalid-feedback">Пароли не совпадают</div>
 			</div>
 
-			<button type="submit" class="btn btn-primary w-100 mt-2">Войти</button>
+			<button id="registerBtn" type="button" class="btn btn-primary w-100 mt-2">Войти</button>
 
 			<div class="mt-2 fw-medium text-center" style="font-size: 12px;">
 				Уже есть аккаунт? <a href="login.html" class="ms-2">Войдите в систему</a>
@@ -88,6 +88,9 @@
 		</form>
 	</div>
 </section>
-<script src="js/bootstrap.min.js"></script>
+
+<script type="module" src="/js/app.ts"></script>
+<script src="/js/bootstrap.min.js"></script>
+
 </body>
 </html>
