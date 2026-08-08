@@ -1,0 +1,17 @@
+<h2 style="margin-top: 100px; font-size: 40px; color: #052C65">Редактирование дохода/расхода</h2>
+<div class="mt-5" style="max-width: 400px;">
+	<select id="editOperationType" class="form-select mb-2" disabled>
+		<option value="income" {{incomeSelected}}>Доход</option>
+		<option value="expense" {{expenseSelected}}>Расход</option>
+	</select>
+	<select id="editOperationCategory" class="form-select mb-2">
+		{{categoryOptions}}
+	</select>
+	<input type="number" id="editOperationAmount" class="form-control mb-2" value="{{amount}}">
+	<input type="date" id="editOperationDate" class="form-control mb-2" value="{{date}}">
+	<textarea id="editOperationComment" class="form-control mb-3" rows="3">{{comment}}</textarea>
+	<div class="d-flex gap-3">
+		<button class="btn btn-success px-3" id="updateOperationBtn" data-id="{{id}}">Сохранить</button>
+		<button class="btn btn-danger px-3" onclick="renderPage('income-expense')">Отмена</button>
+	</div>
+</div>

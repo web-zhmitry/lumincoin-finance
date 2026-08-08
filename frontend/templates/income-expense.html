@@ -1,0 +1,31 @@
+<h2 style="margin-top: 100px; font-size: 40px; color: #052C65">Доходы и расходы</h2>
+<div class="mt-5" style="max-width: 400px;">
+	<div class="d-flex gap-3">
+		<button class="btn btn-success px-3" onclick="renderPage('operation-create', 'income')">Создать доход</button>
+		<button class="btn btn-danger px-3" onclick="renderPage('operation-create', 'expense')">Создать расход</button>
+	</div>
+</div>
+<div class="rowOfButtons d-flex align-items-center gap-3 mt-4 mb-4" id="filterButtons">
+	<button class="btn-filter active" data-period="all">Все</button>
+	<button class="btn-filter" data-period="today">Сегодня</button>
+	<button class="btn-filter" data-period="week">Неделя</button>
+	<button class="btn-filter" data-period="month">Месяц</button>
+	<button class="btn-filter" data-period="year">Год</button>
+	<button class="btn-filter" data-period="interval">Интервал</button>
+	<span class="ms-3 fw-medium" style="font-size: 14px; color: black">
+    с <input type="date" id="filterDateFrom" style="border: 1px solid #6C757D; border-radius: 4px; padding: 2px 5px; width: 130px;" disabled>
+    по <input type="date" id="filterDateTo" style="border: 1px solid #6C757D; border-radius: 4px; padding: 2px 5px; width: 130px;" disabled>
+    </span>
+</div>
+<div class="table-responsive">
+	<table class="table table-borderless" style="border-collapse: collapse; font-size: 16px">
+		<thead>
+		<tr style="border-bottom: 1px solid #D9D9D9; border-top: 1px solid #D9D9D9; color: #052c65;">
+			<th>№ операции</th><th>Тип</th><th>Категория</th><th>Сумма</th><th>Дата</th><th>Комментарий</th><th></th>
+		</tr>
+		</thead>
+		<tbody>
+		{{rowsHtml}}
+		</tbody>
+	</table>
+</div>

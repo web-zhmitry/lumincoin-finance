@@ -1,0 +1,17 @@
+<h2 style="margin-top: 100px; font-size: 40px; color: #052C65">Создание дохода/расхода</h2>
+<div class="mt-5" style="max-width: 400px;">
+	<select id="operationType" class="form-select mb-2">
+		<option value="income" {{incomeSelected}}>Доход</option>
+		<option value="expense" {{expenseSelected}}>Расход</option>
+	</select>
+	<select id="operationCategory" class="form-select mb-2">
+		{{categoryOptions}}
+	</select>
+	<input type="number" id="operationAmount" class="form-control mb-2" placeholder="Сумма в $...">
+	<input type="date" id="operationDate" class="form-control mb-2">
+	<textarea id="operationComment" class="form-control mb-3" placeholder="Комментарий..." rows="3"></textarea>
+	<div class="d-flex gap-3">
+		<button class="btn btn-success px-3" id="createOperationBtn">Создать</button>
+		<button class="btn btn-danger px-3" onclick="renderPage('income-expense')">Отмена</button>
+	</div>
+</div>
